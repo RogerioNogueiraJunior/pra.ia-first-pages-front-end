@@ -1,0 +1,34 @@
+<?php
+ if(!isset($_SESSION)){
+    session_start();
+ }
+ include('php\protect.php')
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pra.ia</title>
+    <link rel="stylesheet" href="styles/styleuser.css">
+</head>
+<body>
+    <a class="saida" href="CreationPage.html">*</a>
+    <a href="php\logout.php"><button class="log-out">Saír</button></a>
+    <div class="user-Board">
+        <img src="imagens/UserImage.png" alt="" class="userImage">
+        <img src="imagens/UserTable.png" alt="" class="usertable">
+        <div class="social-bt"><!--imagem dos botoes de log-in e sign-in dentro do banner-->
+            <img class="friend" src="imagens/Friends_bt.png" alt="">
+            <img class="links" src="imagens/LINKS.png" alt="">
+        </div>
+        <div class="userInfo">
+            <p>PONTOS: 2000</p><br>
+            <p>CARGO: ADMINISTRADOR</p><br>
+            <p>NOME: <?php echo $_SESSION['nome'];?></p><br>
+            <p>ID: #<?php echo $_SESSION['user'];?></p><br>
+        </div>
+    </div>
+<img src="imagens/new_bg.png" alt="" class="background">
+</body>
+</html>

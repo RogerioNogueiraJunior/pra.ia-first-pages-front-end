@@ -1,0 +1,97 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+}
+.bannerimg{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 5;
+}
+.create-buttons{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+.logo{
+    display: flex;
+    transform: translateX(-35vw);
+    justify-content: center;
+    position: fixed;
+    z-index: 6;
+    gap: 30px;
+
+    & .logo_img{
+        width: auto;
+        height: 60px;
+    }
+}
+
+.user:hover,.bt_big_create:hover, .bt_big_enter:hover,.home:hover{
+    cursor: pointer;
+    filter: brightness(110%);
+}
+.user-div{
+    transform: translateX(35vw);
+    padding-top: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 6;
+    gap: 30px;
+    & .home{
+        width: auto;
+        height: 75px;
+    }
+}
+
+.bt_big_create{
+    width: 50%;
+    height: auto;
+}
+.bt_big_enter{
+    width: 50%;
+    height: auto;
+
+}
+.bt_big_create:hover, .bt_big_enter:hover{
+    animation-name: float;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-9px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}

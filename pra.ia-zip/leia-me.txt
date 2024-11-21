@@ -1,0 +1,11 @@
+a pagina inicial do site é "homePage.html"
+para funcionar 100% deve ser iniciado com o xampp com o apache e o mysql ligados
+log in: email: teste@teste.com senha: teste
+e a pasta pra.ia deve ser colcoada na pasta htdocs do xampp
+
+integrantes:
+
+Leandro Penha de Paula
+João Pedro Alves Correia
+Rogério Nogueira Júnior
+Kaique de Souza Basílio

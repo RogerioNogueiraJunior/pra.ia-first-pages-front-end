@@ -1,0 +1,81 @@
+@import url('https://fonts.cdnfonts.com/css/spacetype?styles=144571');
+*{
+    font-family: 'SpaceType', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.background{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.user-Board{
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    & .usertable {
+        width: 500px;
+        height: auto;
+    }
+
+    & .userImage{
+        width: 150px;
+        height: auto;
+        position: fixed;
+        margin-top: -185px;
+        margin-left: -325px;
+    }
+    & .social-bt{
+        margin-left: 155px;
+        position: fixed;
+        display: flex;
+        margin-top: -205px;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        z-index: 6;
+        gap: 2vw;
+    }
+
+    .userInfo{
+        width: 300px;
+        margin-left: 155px;
+        height: auto;
+        position: fixed;
+        color: #782600;
+    }
+}
+.saida{
+    position: fixed;
+    transform: translateX(10px);
+    color:white;
+    font-size: 60px;
+    text-decoration: none;
+    z-index: 4;
+}
+.userImage:hover, .friend:hover, .links:hover, .log-out:hover{
+    cursor: pointer;
+    filter: brightness(105%);
+}
+.log-out{
+    display: block;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    z-index: 5;
+    border: none;
+    background-color: red;
+    color: white;
+    margin-left: 450px;
+    margin-top: 440px;
+}
+

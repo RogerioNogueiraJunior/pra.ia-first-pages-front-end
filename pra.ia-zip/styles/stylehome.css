@@ -1,0 +1,103 @@
+@import url('https://fonts.cdnfonts.com/css/spacetype?styles=144571');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.banner{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    gap: 40%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 146, 182, 0.801);
+    padding-top: 5px;
+    z-index: 3;
+
+    & .logo{
+        display: flex;
+        gap: 10px;
+        height: 60px;
+        justify-content: center;
+        z-index: 6;
+    }
+
+    & .log,.sign, .Creation-bt {
+        width: auto;
+        height: 55px;
+    }
+    & .log-sign-bt{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        z-index: 6;
+        gap: 0.5vw;
+    }
+}
+.infotable-div{
+    display: flex;
+    margin-top: 250px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    & .infotable{
+        width: auto;
+        height: 400px;
+    }
+}
+.logo_img{
+    width: auto;
+    height: 60px;
+}
+.rodape{
+    color: white;
+    font-family: 'SpaceType', sans-serif;
+    font-size: small;
+    margin-block: 30px;
+}
+.sign:hover,.log:hover{
+    cursor: pointer;
+    filter: brightness(110%);
+}
+.background{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.TextContent{
+    display: flex;
+    max-width: fit-content;
+    flex-direction: row;
+    gap: 10px;
+    text-align: justify;
+    color: white;
+    font-family: 'SpaceType', sans-serif;
+    justify-content: space-between;
+    font-size: large;
+
+    & .texto {
+        align-self: center;
+        margin-left: 32px;
+        width: 300px;
+        position: absolute;
+    }
+
+    & .texto2 {
+        margin-left: 422px;
+        align-self: center;
+        width: 200px;
+        position: absolute;
+    }
+}

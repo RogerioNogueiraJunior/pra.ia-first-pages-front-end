@@ -1,0 +1,33 @@
+<?php
+    include("php\protect.php");
+    if(!isset($_SESSION)){
+        session_start();
+     }
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pra.ia</title>
+    <link rel="stylesheet" href="styles/stylecreation.css">
+</head>
+<body>
+    <div class="banner">  <!--div do banner-->
+        <div class="logo"> <!--imagem da logo dentro do banner-->
+            <img class="logo_img" src="imagens/logo.png" alt="">
+        </div>
+        <div class="user-div"> <!--imagem do user dentro do banner-->
+           <a href="UserPage.html"><img class="user" src="imagens/user.png" alt=""></a>
+            <a href="homePage_postlog.html"><img class="home" src="imagens/home bt.png" alt=""></a>
+        </div>
+        <img class="bannerimg" src="imagens\baner1.png" alt="">
+    </div>
+    <div class="create-buttons">
+        <img class="bt_big_create" src="imagens/bt_big_criar.png" alt="">
+        <img class="bt_big_enter" src="imagens/bt_big_entrar.png" alt="">
+    </div>
+        <img class="background" src="imagens/new_bg.png" alt="">
+<script src="script.js"></script>
+</body>
+</html>

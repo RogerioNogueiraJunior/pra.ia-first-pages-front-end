@@ -1,0 +1,115 @@
+@import url('https://fonts.cdnfonts.com/css/spacetype?styles=144571');
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'SpaceType', sans-serif;
+}
+.error-message{
+    color: red;
+}
+.background{
+    width: 100%;
+    height: 100%;
+}
+.log-form{
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inputs{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -100px;
+    margin-left: 52px;
+}
+.layout{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(8%);
+    animation-name: close;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition: linear;
+}
+@keyframes close{
+    0%{
+        gap:3%;
+    }
+    100%{
+        gap:0px;
+    }
+}
+.logo{
+    width: 20%;
+    height: auto;
+    margin: 6%;
+    top: 24%;
+}
+.textinp{
+    width: 100%;
+    max-width: 270px;
+    height: 30px;
+    padding: 12px;
+    font-size: 18px;
+    font-family: "Courier New", monospace;
+    color: #3d1300;
+    background-color: #fff;
+    border: 4px solid #692a00;
+    border-radius: 0;
+    outline: none;
+    transition: all 0.3s ease;
+    -webkit-box-shadow: 10px 15px 0px 1px rgba(0,0,0,0.21);
+    -moz-box-shadow: 10px 15px 0px 1px rgba(0,0,0,0.21);
+    box-shadow: 10px 15px 0px 1px rgba(0,0,0,0.21);
+}
+.bt_log_ok{
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: rgb(14, 160, 209);
+    color: white;
+    font-family: 'SpaceType', sans-serif;
+    font-size: 20px;
+}
+.bt_log_cancel{
+    width: 80px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    font-family: 'SpaceType', sans-serif;
+    font-size: 15px;
+}
+.bt_log_ok:hover, .bt_log_cancel:hover, .saida:hover{
+    filter: brightness(50%);
+}
+.saida{
+    position: fixed;
+    transform: translateX(10px);
+    font-family: 'SpaceType', sans-serif;
+    color:white;
+    font-size: 60px;
+    text-decoration: none;
+    z-index: 4;
+}
+.bt-log{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.no-log{
+    color: rgb(38, 115, 187);
+    font-size: 20px;
+}
